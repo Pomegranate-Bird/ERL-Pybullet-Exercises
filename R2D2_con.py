@@ -124,7 +124,7 @@ def turn_right():
                             force=maxForce)
 
 
-
+def stop():
     maxForce = 0
     p.setJointMotorControl2(bodyUniqueId=r2d2Id, jointIndex=2,
                             controlMode=p.VELOCITY_CONTROL,
