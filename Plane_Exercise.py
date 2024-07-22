@@ -20,9 +20,9 @@ intial_Coordinates = p.getQuaternionFromEuler(orientation)
 
 # Allows us to load in URDF files easily using the p.load function
 p.setAdditionalSearchPath(pybullet_data.getDataPath())
-plane = p.loadURDF("plane.urdf",coordinates, intial_Coordinates)
+plane = p.loadURDF("plane.urdf", coordinates, intial_Coordinates)
 
-# Loop to contniue the simulation without closing
+# Loop to continue the running the simulation without closing
 
 while True:
     p.stepSimulation()
